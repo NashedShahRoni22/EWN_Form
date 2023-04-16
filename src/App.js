@@ -1,8 +1,11 @@
+import Form from "./Components/Form";
+import { ThemeProvider } from "@material-tailwind/react";
+
 function App() {
   return (
-    <div >
-      
-    </div>
+    <ThemeProvider >
+      <Form/>
+    </ThemeProvider>
   );
 }
 
