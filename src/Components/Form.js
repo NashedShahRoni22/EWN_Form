@@ -7,7 +7,7 @@ import FormFinish from "./FormFinish";
 
 const Form = () => {
   const [page, setPage] = useState(0);
-  
+
   const FormTitles = [
     "Account Information",
     "Personal Information",
@@ -30,16 +30,18 @@ const Form = () => {
     }
   }
   return (
-    <div className="form">
-      <div className="progressbar"></div>
+    <div className="form container mx-auto h-[100vh] flex flex-col justify-center items-center">
+      <div className="h-12 w-12 bg-blue-400 flex justify-center items-center mb-5 rounded-full">
+        <p className="text-3xl font-bold text-white">{page + 1}</p>
+      </div>
       <div className="form">
-        <div className="header">
+        {/* <div className="header">
           <h1>{FormTitles[page]}</h1>
-        </div>
+        </div> */}
         <div className="body">
           {DisplayForm()}
         </div>
-        <div className="footer">
+        <div className="footer flex justify-center gap-4 mt-5">
           {page > 0 && (
             <Button onClick={() => setPage((currentPage) => currentPage - 1)}>
               Prev
