@@ -60,7 +60,8 @@ const Form = () => {
       yourphoto: "",
       yoursignature: "",
     });
-    toast("Form submitted successfully!")
+    toast("Form submitted successfully!");
+    setPage(0);
   };
   return (
     <div className="form container mx-auto h-[100vh] flex flex-col justify-center items-center">
@@ -81,10 +82,9 @@ const Form = () => {
           <Progress
             value={page === 0 ? 25 : page === 1 ? 50 : page === 2 ? 75 : 100}
             color="green"
-            label="Completed"
           />
         </div>
-        <div className="form-body my-5">{DisplayForm()}</div>
+        <div className="form-body my-5 bg-white shadow-xl rounded-md">{DisplayForm()}</div>
         <div className="form-footer flex justify-center gap-4 mt-5">
           {page > 0 && (
             <Button
