@@ -1,10 +1,16 @@
+<<<<<<< HEAD
 *Live Website: https://ewn-form.netlify.app/
 *Github Repository: https://github.com/NashedShahRoni22/EWN_Form
+=======
+Live Website:
+https://ewn-form.netlify.app/
+>>>>>>> 7e0bef6778205b858863ccc3b0a3e70e738f1fa8
 
 *Packages I have used:
 1. Tailwind CSS
 2. Material UI
 3. React Toastify 
+<<<<<<< HEAD
 
 *In the project directory, you can run:
 
@@ -21,3 +27,5 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.
 Your app is ready to be deployed!
+=======
+>>>>>>> 7e0bef6778205b858863ccc3b0a3e70e738f1fa8
